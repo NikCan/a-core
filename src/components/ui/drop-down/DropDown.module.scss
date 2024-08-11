@@ -1,0 +1,44 @@
+.dropDown {
+  position: relative;
+  width: '150px';
+
+  .dropDownBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dropDownList {
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    background: white;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+
+  .dropDownItem {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+
+  .checkbox {
+    width: 18px;
+    height: 18px;
+  }
+
+  .label {
+    white-space: nowrap;
+  }
+}

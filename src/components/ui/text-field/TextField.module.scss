@@ -1,0 +1,38 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+
+  .required {
+    color: rgba(221, 30, 38, 1);
+  }
+
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .input {
+      height: 40px;
+      border-radius: 3px;
+      border: 1px solid rgba(188, 188, 188, 1);
+      padding: 10px;
+    }
+    .errorInput {
+      border: 1px solid rgba(221, 30, 38, 1);
+    }
+    .icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  .errorText {
+    font-size: 14px;
+    height: 17px;
+    color: rgba(221, 30, 38, 1);
+  }
+}

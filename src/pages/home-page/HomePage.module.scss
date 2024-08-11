@@ -1,0 +1,50 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px 100px 100px;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 100%;
+  }
+}
+
+.treeContainer {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.descriptionContainer {
+  width: 70%;
+
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    border: 1px solid rgba(188, 188, 188, 1);
+    border-radius: 3px;
+    min-height: 75px;
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+
+  .title {
+    font-size: 20px;
+  }
+}

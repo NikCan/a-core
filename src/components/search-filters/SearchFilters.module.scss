@@ -1,0 +1,13 @@
+.selectors {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+
+  .input {
+    height: 34px;
+    padding: 4px;
+    border-radius: 3px;
+    border: 1px solid rgba(188, 188, 188, 1);
+  }
+}

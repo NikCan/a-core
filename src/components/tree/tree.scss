@@ -1,0 +1,127 @@
+.rc-tree {
+  margin: 0;
+  border: 1px solid transparent;
+  overflow-y: auto;
+  height: 100%;
+
+  .rc-tree-treenode {
+    margin: 0;
+    padding: 2px;
+    line-height: 24px;
+    white-space: nowrap;
+    list-style: none;
+    outline: 0;
+
+    & span.rc-tree-switcher,
+    & span.rc-tree-iconEle {
+      cursor: pointer;
+    }
+
+    & span.rc-tree-switcher.rc-tree-icon__customize,
+    & span.rc-tree-iconEle.rc-tree-icon__customize {
+      background-image: none;
+    }
+
+    .filter-node > .rc-tree-node-content-wrapper {
+      color: #a60000 !important;
+      font-weight: bold !important;
+    }
+
+    & ul {
+      margin: 0;
+      padding: 0 0 0 18px;
+    }
+
+    .rc-tree-node-content-wrapper {
+      position: relative;
+      display: inline-block;
+      height: 24px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      vertical-align: top;
+      cursor: pointer;
+    }
+  }
+}
+.rc-tree-focused:not(.rc-tree-active-focused) {
+  border-color: cyan;
+}
+
+.rc-tree:not(.rc-tree-show-line) .rc-tree-treenode .rc-tree-switcher-noop {
+  background: none;
+}
+.rc-tree.rc-tree-show-line .rc-tree-treenode:not(:last-child) > ul {
+  background: url('data:image/gif;base64,R0lGODlhCQACAIAAAMzMzP///yH5BAEAAAEALAAAAAAJAAIAAAIEjI9pUAA7')
+    0 0 repeat-y;
+}
+.rc-tree.rc-tree-show-line
+  .rc-tree-treenode:not(:last-child)
+  > .rc-tree-switcher-noop {
+  background-position: -56px -18px;
+}
+.rc-tree.rc-tree-show-line
+  .rc-tree-treenode:last-child
+  > .rc-tree-switcher-noop {
+  background-position: -56px -36px;
+}
+.rc-tree-child-tree {
+  display: none;
+}
+.rc-tree-child-tree-open {
+  display: block;
+}
+.rc-tree-treenode-disabled > span:not(.rc-tree-switcher),
+.rc-tree-treenode-disabled > a,
+.rc-tree-treenode-disabled > a span {
+  color: #767676;
+  cursor: not-allowed;
+}
+.rc-tree-treenode-active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.rc-tree-icon__open {
+  margin-right: 2px;
+  vertical-align: top;
+  background-position: -110px -16px;
+}
+.rc-tree-icon__close {
+  margin-right: 2px;
+  vertical-align: top;
+  background-position: -110px 0;
+}
+.rc-tree-icon__docu {
+  margin-right: 2px;
+  vertical-align: top;
+  background-position: -110px -32px;
+}
+.rc-tree-icon__customize {
+  margin-right: 2px;
+  vertical-align: text-top;
+}
+.rc-tree-title {
+  display: inline-block;
+  .custom-title {
+    margin-left: 10px;
+  }
+}
+.rc-tree-indent {
+  display: inline-block;
+  height: 0;
+  vertical-align: bottom;
+}
+.rc-tree-indent-unit {
+  display: inline-block;
+  width: 16px;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.rc-tree-treenode-selected {
+  background-color: rgba(216, 216, 216, 0.7);
+  border-radius: 3px;
+}
